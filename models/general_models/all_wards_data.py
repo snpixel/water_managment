@@ -13,6 +13,7 @@ def calculate_total_volume(ward_dir, constant_pipe_size=False):
     total_volume = 0
     for root, _, files in os.walk(ward_dir):
         for file in files:
+            print(file)
             if file.endswith('.csv'):
                 df = pd.read_csv(os.path.join(root, file))
                 if constant_pipe_size:
@@ -24,8 +25,8 @@ def calculate_total_volume(ward_dir, constant_pipe_size=False):
     return total_volume
 
 # Directories containing the wards with variable and constant pipe sizes
-base_variable_dir = 'water_managment/dataofgrpahs/wards/ward_'
-base_constant_dir = 'water_managment/dataofgrpahs/old_wards/ward_'
+base_variable_dir = 'water_managment//dataofgrpahs//wards//ward_'
+base_constant_dir = 'water_managment//dataofgrpahs//old_wards//ward_'
 
 # Initialize lists to hold volumes
 variable_volumes = []
@@ -43,6 +44,7 @@ for i in range(1, 85):
     
     # Append volumes to lists
     variable_volumes.append(variable_total_volume)
+    print(variable_volumes)
     constant_volumes.append(constant_total_volume)
 
 # Data for plotting
