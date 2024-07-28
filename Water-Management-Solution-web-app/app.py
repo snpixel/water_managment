@@ -2,7 +2,8 @@ from flask import Flask, render_template
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import matplotlib
+matplotlib.use('agg')
 app = Flask(__name__)
 
 # Function to calculate volume based on pipe size
