@@ -18,7 +18,7 @@ colonies = {
 
 def read_data(colony_name):
     try:
-        return pd.read_csv(f'dataofgrpahs//leak_colony//data_{colony_name}.csv')
+        return pd.read_csv(f'water_managment//dataofgrpahs//leak_colony//data_{colony_name}.csv')
     except FileNotFoundError:
         print(f"File data_{colony_name}.csv not found.")
         return pd.DataFrame(columns=['timestamp', 'tank_level'])
