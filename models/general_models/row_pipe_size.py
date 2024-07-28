@@ -23,7 +23,7 @@ def update_csv_with_pipe_size(input_csv_path, output_csv_path):
     df.to_csv(output_csv_path, index=False)
 
 # Paths for the input and output CSV files
-input_csv_path = 'colony_houses.csv'
+input_csv_path = 'images_result//colony_houses.csv'
 output_csv_path = 'dataofgrpahs//colony_houses_with_pipe_size.csv'
 
 # Update the CSV file

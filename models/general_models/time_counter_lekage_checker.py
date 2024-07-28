@@ -18,7 +18,7 @@ colonies = {
 
 def read_data(colony_name):
     try:
-        return pd.read_csv(f'water_managment//dataofgrpahs//leak_colony//data_{colony_name}.csv')
+        return pd.read_csv(f'dataofgrpahs//leak_colony//data_{colony_name}.csv')
     except FileNotFoundError:
         print(f"File data_{colony_name}.csv not found.")
         return pd.DataFrame(columns=['timestamp', 'tank_level'])
@@ -70,8 +70,8 @@ def main():
             if anomaly:
                 print(f"Anomaly detected:")
                 print(f"Timestamp: {anomaly['timestamp']}")
-                print(f"Actual fill time: {anomaly['duration']:.2f} minutes")
-                print(f"Expected fill time: {anomaly['expected']} minutes")
+                print(f"Actual empty time: {anomaly['duration']:.2f} minutes")
+                print(f"Expected empty time: {anomaly['expected']} minutes")
                 anomaly_detected = True
             else:
                 print("No anomalies detected.")

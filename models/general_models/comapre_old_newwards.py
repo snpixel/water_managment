@@ -24,8 +24,8 @@ def calculate_total_volume(ward_dir, constant_pipe_size=False):
     return total_volume
 
 # Directories containing the wards with variable and constant pipe sizes
-variable_pipe_size_dir = 'water_managment//dataofgrpahs//wards//ward_1'
-constant_pipe_size_dir = 'water_managment//dataofgrpahs//old_wards//ward_1'
+variable_pipe_size_dir = 'dataofgrpahs//wards//ward_1'
+constant_pipe_size_dir = 'dataofgrpahs//old_wards//ward_1'
 
 # Calculate total volumes
 
@@ -58,8 +58,8 @@ def calculate_total_volume(ward_dir, constant_pipe_size=False):
     return total_volume
 
 # Directories containing the wards with variable and constant pipe sizes
-variable_pipe_size_dir = 'water_managment//dataofgrpahs//wards//ward_1'
-constant_pipe_size_dir = 'water_managment//dataofgrpahs//old_wards//ward_1'
+variable_pipe_size_dir = 'dataofgrpahs//wards//ward_1'
+constant_pipe_size_dir = 'dataofgrpahs//old_wards//ward_1'
 
 # Calculate total volumes
 

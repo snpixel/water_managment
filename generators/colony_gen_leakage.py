@@ -44,4 +44,4 @@ def generate_data(colony_name, file_path):
 
 # Generate data for all colonies
 for colony_name in colonies.keys():
-    generate_data(colony_name, f'water_managment//dataofgrpahs//leak_colony//data_{colony_name}.csv')
+    generate_data(colony_name, f'dataofgrpahs//leak_colony//data_{colony_name}.csv')
