@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Runner</title>
+    <style>
+        /* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styles */
+h1 {
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Navigation styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Output section styles */
+#output {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#output img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+}
+
+#output p {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Run Models</h1>
+    <ul>
+        <li><a href="{{ url_for('run_model', model_name='model1') }}">Run Model 1</a></li>
+        <li><a href="{{ url_for('run_model', model_name='model2') }}">Run Model 2</a></li>
+        <li><a href="{{ url_for('run_model', model_name='model4') }}">Run Model 3</a></li>
+    </ul>
+    <h2>Output</h2>
+    <div id="output">
+        {% if output %}
+            <img src="{{ url_for('static', filename=output) }}" alt="Model Output">
+        {% else %}
+            <p>No output available.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
