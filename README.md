@@ -30,17 +30,34 @@ Holds all the models used in the project, including one machine learning model t
 1.**all_wards_data.py** this shows the volume graph of new line system vs old line system
 ![alt text](https://github.com/snpixel/water_managment/blob/c38d7ab85b5ce817716ffe4b7ea75d19b87df262/images_result/Figure_1.png)
 
+
+
+
 2.**compare_old_newwards.py** this shows the graph of all the wards together of new line vs old line system
 ![alt text](https://github.com/snpixel/water_managment/blob/c38d7ab85b5ce817716ffe4b7ea75d19b87df262/images_result/sare%20ward%20ka%20data.png)
 
+
+
+
 3.**pipe_leak.py** this shows us the volume difference between two IOT in the pipe whoch help us to identify the leakage
-![alt text]()
+![alt text](https://github.com/snpixel/water_managment/blob/a018c754afc08564c6f3c96cbc5304714b5b0563/images_result/Screenshot%202024-07-27%20185355.png)
+
+
+
 
 4.**row_pipe_size.py** this shows the pipe size required in the rows of house according to its need
-![alt text]()
+![alt text](https://github.com/snpixel/water_managment/blob/a018c754afc08564c6f3c96cbc5304714b5b0563/images_result/Screenshot%202024-07-27%20185627.png)
+
+
+
+
 
 5.**time_counter_leakage_checker.py** this check the outgoing time of water from teh main tank and alert when the time dosent match the average out value
 ![alt text](https://github.com/snpixel/water_managment/blob/c38d7ab85b5ce817716ffe4b7ea75d19b87df262/images_result/Screenshot%202024-07-27%20184133.png)
+
+
+
+
 
 ## Usage
 
